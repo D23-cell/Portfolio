@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">Deepak</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    
+    <section id="home">
+        <div class="home-content">
+            <img src="profile.jpg" alt="Profile Logo" class="profile-logo">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Deepak, a passionate developer</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+            <a href="Resume.docx" class="cta-button download-cv" download>Download CV</a>
+        </div>
+    </section>
+
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p> A Motivated web development graduate with hands-on experience in building responsive websites using HTML, CSS,
+ JavaScript, React, and Node.js. Skilled in problem-solving, teamwork, and modern web practices. Eager to contribute to
+ innovative projects and grow in a dynamic development environment</p>
+    </section>
+
+    
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Bachelor of Technology</h3>
+            <p>Barkatullah University, 2023 - 2027</p>
+            <p>Specialized in Information Technology with a focus on web development.</p>
+        </div>
+    </section>
+
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>React</li>
+        </ul>
+    </section>
+
+    
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-item">
+            <h3>Geeks of Gurukul</h3>
+            <p>Participated in Core Ecosystem Hackathon, April 2025.</p>
+           
+        </div>
+        <div class="certificate-item">
+            <h3>Simplilearn Skillup</h3>
+            <p>Completed the Online Course Introduction to Artificial Intelligence, October 2024.</p>
+            
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>© 2025 Deepak. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
